@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiền Phong</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <img src="/img/banner-top-ky-nguyen-9511.jpg" alt="Banner Tiền Phong" class="banner" />
+    <div class="info-bar">
+        <div class="left-info">
+            <ul>
+                <li><a href="#">Toà soạn</a></li>
+                <li><a href="#">Quảng cáo</a></li>
+                <li>Hotline: 07785123</li>
+            </ul>
+            </div>
+        <div class="right-icons">
+            <img src="https://via.placeholder.com/24x24?text=L" alt="Logo" />
+            <img src="https://via.placeholder.com/24x24?text=YT" alt="YouTube" />
+            <img src="https://via.placeholder.com/24x24?text=FB" alt="Facebook" />
+            <img src="https://via.placeholder.com/24x24?text=ZL" alt="Zalo" />
+        </div>
+      </div>
+    
+    <div class="top-box">
+        <div class="logo">
+          <a href="#">
+            <img src="/img/tải xuống.png"  />
+          </a>
+        </div>
+        <div class="top-right">
+          <div class="date">
+            <span id="current-date"></span>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <button>Tìm</button>
+          </div>
+        </div>
+</div>    
+  <div class="container">
+    <header>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#">Xã hội</a></li>
+          <li><a href="#">Kinh tế</a></li>
+          <li><a href="#">Sóng gió</a></li>
+          <li><a href="#">Địa ốc</a></li>
+          <li><a href="#">Sức khoẻ</a></li>
+          <li><a href="#">Thế giới</a></li>
+          <li><a href="#">Giới trẻ</a></li>
+          <li><a href="#">Pháp luật</a></li>
+          <li><a href="#">Thể thao</a></li>
+          <li><a href="#">Người lính</a></li>
+          <li><a href="#">Xe</a></li>
+          <li><a href="#">Văn hoá</a></li>
+          <li><a href="#">Giải trí</a></li>
+          <li><a href="#">Giáo dục</a></li>
+          <li><a href="#">Khoa học</a></li>
+          <li><a href="#">Hoa hậu</a></li>
+          <li><a href="#">Bạn đọc</a></li>
+          <li><a href="#">Video</a></li>
+        </ul>
+        <br>
+      </nav>
+
+      <img src="/img/banner-bao-tien-phong-1276x90px-2003-2285.jpg" alt="Banner Tiền Phong" class="banner" />
+
+    </header>
+
+    <main>
+        <section class="highlight-news">
+            <div class="highlight-box">
+              <div class="highlight-img">
+                <img src="/img/124ttracp-522-8143.jpg"  />
+                <h1>Dự kiến cơ cấu tổ chức mới của Thanh tra Chính phủ sau sắp xếp</h1>
+                <h2>TPO - Căn cứ kết luận, chỉ đạo của Bộ Chính trị, Ban Bí thư về đề án sắp xếp hệ thống cơ quan thanh tra và chỉ đạo của Chính phủ, Thủ tướng, dự thảo quy định cơ cấu tổ chức của Thanh tra Chính phủ gồm 22 đơn vị.
+                </h2>
+                <link rel="Thanh tra Chính phủ đề xuất bỏ thanh tra huyện, thanh tra sở, thanh tra tổng cục" href="">
+              </div>
+              <div class="highlight-title">
+                <h3>áđá</h3>
+              </div>
+              <div class="highlight-desc">
+                <p>Mô tả ngắn gọn về tin nổi bật để thu hút người đọc.</p>
+              </div>
+            </div>
+          </section>
+          
+      <section class="latest-news">
+        <h2>Tin mới nhất</h2>
+
+        <article>
+          <img src="tin1.jpg" alt="Hình ảnh tin tức" />
+          <h3>Tiêu đề tin tức 1</h3>
+          <p>Mô tả ngắn gọn về tin tức 1.</p>
+        </article>
+
+        <article>
+          <img src="tin2.jpg" alt="Hình ảnh tin tức" />
+          <h3>Tiêu đề tin tức 2</h3>
+          <p>Mô tả ngắn gọn về tin tức 2.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Báo Tiền Phong. Bản quyền thuộc về tòa soạn.</p>
+    </footer>
+  </div>
+</body>
+</html>
+<script>
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString("vi-VN", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("current-date").textContent = formattedDate;
+  </script>
+  
