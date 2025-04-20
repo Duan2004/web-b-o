@@ -1,125 +1,1611 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tiền Phong</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <img src="/img/banner-top-ky-nguyen-9511.jpg" alt="Banner Tiền Phong" class="banner" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiền Phong</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      src="/img/banner-top-ky-nguyen-9511.jpg"
+      alt="Banner Tiền Phong"
+      class="banner"
+    />
     <div class="info-bar">
-        <div class="left-info">
-            <ul>
-                <li><a href="#">Toà soạn</a></li>
-                <li><a href="#">Quảng cáo</a></li>
-                <li>Hotline: 07785123</li>
-            </ul>
-            </div>
-        <div class="right-icons">
-            <img src="https://via.placeholder.com/24x24?text=L" alt="Logo" />
-            <img src="https://via.placeholder.com/24x24?text=YT" alt="YouTube" />
-            <img src="https://via.placeholder.com/24x24?text=FB" alt="Facebook" />
-            <img src="https://via.placeholder.com/24x24?text=ZL" alt="Zalo" />
+      <div class="left-info">
+        <ul>
+          <li><a href="#">Toà soạn</a></li>
+          <li><a href="#">Quảng cáo</a></li>
+          <li>Hotline: 07785123</li>
+        </ul>
+      </div>
+      <div class="right-icons">
+        <img src="https://via.placeholder.com/24x24?text=L" alt="Logo" />
+        <img src="https://via.placeholder.com/24x24?text=YT" alt="YouTube" />
+        <img src="https://via.placeholder.com/24x24?text=FB" alt="Facebook" />
+        <img src="https://via.placeholder.com/24x24?text=ZL" alt="Zalo" />
+      </div>
+    </div>
+
+    <div class="top-box">
+      <div class="logo">
+        <a href="#">
+          <img src="/img/tải xuống.png" />
+        </a>
+      </div>
+      <div class="top-right">
+        <div class="date">
+          <span id="current-date"></span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Tìm kiếm..." />
+          <button>Tìm</button>
         </div>
       </div>
-    
-    <div class="top-box">
-        <div class="logo">
-          <a href="#">
-            <img src="/img/tải xuống.png"  />
-          </a>
-        </div>
-        <div class="top-right">
-          <div class="date">
-            <span id="current-date"></span>
-          </div>
-          <div class="search-box">
-            <input type="text" placeholder="Tìm kiếm..." />
-            <button>Tìm</button>
-          </div>
-        </div>
-</div>    
-  <div class="container">
-    <header>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#">Xã hội</a></li>
-          <li><a href="#">Kinh tế</a></li>
-          <li><a href="#">Sóng gió</a></li>
-          <li><a href="#">Địa ốc</a></li>
-          <li><a href="#">Sức khoẻ</a></li>
-          <li><a href="#">Thế giới</a></li>
-          <li><a href="#">Giới trẻ</a></li>
-          <li><a href="#">Pháp luật</a></li>
-          <li><a href="#">Thể thao</a></li>
-          <li><a href="#">Người lính</a></li>
-          <li><a href="#">Xe</a></li>
-          <li><a href="#">Văn hoá</a></li>
-          <li><a href="#">Giải trí</a></li>
-          <li><a href="#">Giáo dục</a></li>
-          <li><a href="#">Khoa học</a></li>
-          <li><a href="#">Hoa hậu</a></li>
-          <li><a href="#">Bạn đọc</a></li>
-          <li><a href="#">Video</a></li>
-        </ul>
-        <br>
-      </nav>
+    </div>
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#">Xã hội</a></li>
+            <li><a href="#">Kinh tế</a></li>
+            <li><a href="#">Sóng gió</a></li>
+            <li><a href="#">Địa ốc</a></li>
+            <li><a href="#">Sức khoẻ</a></li>
+            <li><a href="#">Thế giới</a></li>
+            <li><a href="#">Giới trẻ</a></li>
+            <li><a href="#">Pháp luật</a></li>
+            <li><a href="#">Thể thao</a></li>
+            <li><a href="#">Người lính</a></li>
+            <li><a href="#">Xe</a></li>
+            <li><a href="#">Văn hoá</a></li>
+            <li><a href="#">Giải trí</a></li>
+            <li><a href="#">Giáo dục</a></li>
+            <li><a href="#">Khoa học</a></li>
+            <li><a href="#">Hoa hậu</a></li>
+            <li><a href="#">Bạn đọc</a></li>
+            <li><a href="#">Video</a></li>
+          </ul>
+          <br />
+        </nav>
 
-      <img src="/img/banner-bao-tien-phong-1276x90px-2003-2285.jpg" alt="Banner Tiền Phong" class="banner" />
+        <img
+          src="/img/banner-bao-tien-phong-1276x90px-2003-2285.jpg"
+          alt="Banner Tiền Phong"
+          class="banner"
+        />
+      </header>
 
-    </header>
-
-    <main>
+      <main>
         <section class="highlight-news">
+          <div class="highlight-container">
+            <!-- CỘT 1: Hình ảnh + tiêu đề -->
             <div class="highlight-box">
               <div class="highlight-img">
-                <img src="/img/124ttracp-522-8143.jpg"  />
-                <h1>Dự kiến cơ cấu tổ chức mới của Thanh tra Chính phủ sau sắp xếp</h1>
-                <h2>TPO - Căn cứ kết luận, chỉ đạo của Bộ Chính trị, Ban Bí thư về đề án sắp xếp hệ thống cơ quan thanh tra và chỉ đạo của Chính phủ, Thủ tướng, dự thảo quy định cơ cấu tổ chức của Thanh tra Chính phủ gồm 22 đơn vị.
+                <img src="/img/124ttracp-522-8143.jpg" />
+                <h1>
+                  Dự kiến cơ cấu tổ chức mới của Thanh tra Chính phủ sau sắp xếp
+                </h1>
+                <h2>
+                  TPO - Căn cứ kết luận, chỉ đạo của Bộ Chính trị, Ban Bí thư về
+                  đề án sắp xếp hệ thống cơ quan thanh tra...
                 </h2>
-                <link rel="Thanh tra Chính phủ đề xuất bỏ thanh tra huyện, thanh tra sở, thanh tra tổng cục" href="">
-              </div>
-              <div class="highlight-title">
-                <h3>áđá</h3>
-              </div>
-              <div class="highlight-desc">
-                <p>Mô tả ngắn gọn về tin nổi bật để thu hút người đọc.</p>
               </div>
             </div>
-          </section>
-          
-      <section class="latest-news">
-        <h2>Tin mới nhất</h2>
 
-        <article>
-          <img src="tin1.jpg" alt="Hình ảnh tin tức" />
-          <h3>Tiêu đề tin tức 1</h3>
-          <p>Mô tả ngắn gọn về tin tức 1.</p>
-        </article>
+            <!-- CỘT 2: Danh sách tiêu đề bài viết -->
+            <div class="highlight-titles">
+              <ul>
+                <li>
+                  <a href="#"
+                    >Dự kiến cơ cấu tổ chức mới của Thanh tra Chính phủ sau sắp
+                    xếp</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Thanh tra Chính phủ đề xuất bỏ thanh tra huyện, sở, tổng
+                    cục</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Thủ tướng chỉ đạo kiện toàn bộ máy thanh tra</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Dự thảo quy định 22 đơn vị thuộc Thanh tra Chính phủ</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Dự kiến cơ cấu tổ chức mới của Thanh tra Chính phủ sau sắp
+                    xếp</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Thanh tra Chính phủ đề xuất bỏ thanh tra huyện, sở, tổng
+                    cục</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Thủ tướng chỉ đạo kiện toàn bộ máy thanh tra</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Dự thảo quy định 22 đơn vị thuộc Thanh tra Chính phủ</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-        <article>
-          <img src="tin2.jpg" alt="Hình ảnh tin tức" />
-          <h3>Tiêu đề tin tức 2</h3>
-          <p>Mô tả ngắn gọn về tin tức 2.</p>
-        </article>
-      </section>
-    </main>
+            <!-- CỘT 3: Mô tả thêm -->
+            <div class="highlight-desc-box">
+              <div class="banner">
+                <div class="highlight-img">
+                  <img src="/img/124ttracp-522-8143.jpg" />
+                </div>
+              </div>
+              <div class="banner">
+                <div class="highlight-img">
+                  <img src="/img/124ttracp-522-8143.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <footer>
-      <p>© 2025 Báo Tiền Phong. Bản quyền thuộc về tòa soạn.</p>
-    </footer>
-  </div>
-</body>
+        <section class="highlight-news">
+          <div class="highlight-container">
+            <!-- CỘT 1 -->
+            <div class="highlight-box">
+              <div class="highlight-img banner-1">
+                <img src="/img/124ttracp-522-8143.jpg" alt="Banner 1" />
+              </div>
+              <h1>Dự kiến cơ cấu tổ chức mới của Thanh tra Chính phủ</h1>
+            </div>
+
+            <!-- CỘT 2 -->
+            <div class="highlight-box">
+              <div class="highlight-img banner-2">
+                <img src="/img/124ttracp-522-8143.jpg" alt="Banner 2" />
+              </div>
+              <h1>
+                Thanh tra Chính phủ đề xuất bỏ thanh tra huyện, sở, tổng cục
+              </h1>
+            </div>
+
+            <!-- CỘT 3 -->
+            <div class="highlight-box">
+              <div class="highlight-img banner-3">
+                <img src="/img/124ttracp-522-8143.jpg" alt="Banner 3" />
+              </div>
+              <h1>Thủ tướng chỉ đạo kiện toàn bộ máy thanh tra</h1>
+            </div>
+
+            <!-- CỘT 4 -->
+            <div class="highlight-box">
+              <div class="highlight-img banner-4">
+                <img src="/img/124ttracp-522-8143.jpg" alt="Banner 4" />
+              </div>
+              <h1>Dự thảo quy định 22 đơn vị thuộc Thanh tra Chính phủ</h1>
+            </div>
+          </div>
+        </section>
+
+        <section class="new-section">
+          <nav class="top-nav">
+            <ul class="nav-menu">
+              <li class="nav-item active">MULTIMEDIA</li>
+              <li class="nav-item">LONGFORM</li>
+              <li class="nav-item">INFO</li>
+              <li class="nav-item">QUIZZ</li>
+              <li class="nav-item">VIDEO</li>
+              <li class="nav-item">PODCAST</li>
+              <li class="nav-item">ẢNH</li>
+            </ul>
+          </nav>
+          <div class="content-container">
+            <!-- Cột 1: Banner với thông tin -->
+            <div class="content-column banner-column">
+              <div class="banner-item">
+                <div class="banner-img">
+                  <img src="/img/124ttracp-522-8143.jpg" alt="Banner 1" />
+                </div>
+                <h1>Dự kiến cơ cấu tổ chức mới của Thanh tra Chính phủ</h1>
+                <p>Mô tả ngắn gọn về tin tức này.</p>
+                <a href="#">Đọc thêm</a>
+              </div>
+            </div>
+
+            <!-- Cột 2: 4 Video  -->
+            <div class="content-column video-column">
+              <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-item">
+                  <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="video-overlay">
+                    <h2>Thanh tra Chính phủ</h2>
+                  </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-item">
+                  <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="video-overlay">
+                    <h2>Kiện toàn bộ máy thanh tra</h2>
+                  </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-item">
+                  <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="video-overlay">
+                    <h2>Dự thảo quy định 22 đơn vị</h2>
+                  </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-item">
+                  <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="video-overlay">
+                    <h2>Thanh tra Chính phủ và cải cách</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="multi-column-section">
+          <div class="column column-1">
+            <!-- Cột 1: 5 Banner -->
+            <div class="banner-item">
+              <p class="banner-title">
+                Sáp nhập Cần Thơ, Hậu Giang, Sóc Trăng dự kiến dư 255 trụ sở làm
+                việc
+              </p>
+              <div class="banner-content">
+                <img
+                  src="img/banner-bao-tien-phong-1276x90px-2003-2285.jpg"
+                  alt="Banner 1"
+                />
+
+                <!-- Gói chữ vào 1 khối riêng -->
+                <div class="banner-text">
+                  <h2>Xã hội</h2>
+                  <h3>
+                    TPO - Theo dự tính của TP. Cần Thơ, Hậu Giang và Sóc Trăng,
+                    sau sáp nhập, đơn vị hành chính mới sẽ dư khoảng 255 trụ sở
+                    làm việc. Việc xử lý, sắp xếp lại số tài sản công này sẽ
+                    được tính toán để phù hợp với mô hình đơn vị hành chính mới,
+                    xử lý theo quy định. Đơn vị cấp cơ sở sau sáp nhập sẽ tinh
+                    gọn còn khoảng 99 xã, phường.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <p class="banner-title">
+                Bộ trưởng Quốc phòng Việt Nam và Trung Quốc chủ trì giao lưu hữu
+                nghị tại Lạng Sơn
+              </p>
+              <div class="banner-content">
+                <img src="img/congan.jpg" alt="Banner 1" />
+                <!-- Gói chữ vào 1 khối riêng -->
+                <div class="banner-text">
+                  <h2>Người lính</h2>
+                  <h3>
+                    TPO - Sáng 17/4, Thượng tướng Đổng Quân - Bộ trưởng Bộ Quốc
+                    phòng Trung Quốc, dẫn đầu đoàn đại biểu quân đội nước bạn
+                    nhập cảnh qua cửa khẩu quốc tế Hữu Nghị tham gia thực hiện
+                    nhiều nội dung chương trình Giao lưu Hữu nghị Quốc phòng
+                    Việt Nam - Trung Quốc lần thứ 9 tại tỉnh Lạng Sơn.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <p class="banner-title">
+                Cần Thơ lập đề án tư vấn việc làm cho cán bộ, công chức, viên
+                chức sau sắp xếp
+              </p>
+              <div class="banner-content">
+                <img src="img/cantho.jpeg" alt="Banner 1" />
+
+                <!-- Gói chữ vào 1 khối riêng -->
+                <div class="banner-text">
+                  <h2>Xã hội</h2>
+                  <h3>
+                    TPO - Cử tri Cần Thơ đặc biệt quan tâm tới chế độ, chính
+                    sách cho cán bộ, công chức, viên chức sau khi thực hiện sắp
+                    xếp bộ máy, sau khi sáp nhập cấp xã có tổ chức, sáp nhập lại
+                    các ấp, tổ dân phố, khu vực.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <p class="banner-title">
+                HĐND TPHCM triệu tập kỳ họp xem xét việc sắp xếp tổ chức lại đơn
+                vị hành chính các cấp
+              </p>
+              <div class="banner-content">
+                <img src="img/TPhcm.jpg" alt="Banner 1" />
+
+                <!-- Gói chữ vào 1 khối riêng -->
+                <div class="banner-text">
+                  <h2>Xã hội</h2>
+                  <h3>
+                    TPO - Kỳ họp sẽ xem xét tờ trình của UBND TPHCM về phương án
+                    thực hiện sắp xếp tổ chức lại đơn vị hành chính các cấp và
+                    xây dựng mô hình tổ chức chính quyền địa phương 2 cấp; tổ
+                    chức bộ máy các cơ quan chuyên môn thuộc UBND TPHCM.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <p class="banner-title">
+                Biệt thự bỏ hoang từng của nguyên Chủ tịch Hà Nội được sử dụng
+                làm trụ sở cơ quan
+              </p>
+              <div class="banner-content">
+                <img src="img/diaoc.jpg" alt="Banner 1" />
+
+                <!-- Gói chữ vào 1 khối riêng -->
+                <div class="banner-text">
+                  <h2>Địa ốc</h2>
+                  <h3>
+                    TPO - Biệt thự 12 Nguyễn Chế Nghĩa (quận Hoàn Kiếm, Hà Nội)
+                    - vốn bỏ hoang nhiều năm sau khi cựu Chủ tịch Hà Nội Hoàng
+                    Văn Nghiên trả lại sắp được bố trí làm trụ sở Viện Văn học -
+                    Viện Hàn lâm Khoa học và xã hội Việt Nam.
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Nav GIẢI TRÍ -->
+            <nav class="nav">
+              <ul>
+                <li class="nav-item active">GIẢI TRÍ</li>
+                <li class="nav-item">SAO ĐẸP</li>
+                <li class="nav-item">HẬU TRƯỜNG SAO</li>
+                <li class="nav-item">SAO</li>
+                <li class="nav-item">VIDEO</li>
+              </ul>
+            </nav>
+
+            <!-- 4 Banner  -->
+            <div class="banner-grid">
+              <div class="banner-item">
+                <img src="/img/giaitri.jpg" alt="Giải Trí " />
+                <h4>Giải Trí</h4>
+                <p>Hieuthuhai làm hồi sinh một cái tên</p>
+              </div>
+              <div class="banner-item">
+                <img src="/img/bachtuyet.jpg" alt="Giải Trí2" />
+                <h4>Giải Trí</h4>
+                <p>Kiếp nạn mới của Bạch Tuyết</p>
+              </div>
+              <div class="banner-item">
+                <img src="/img/bay.jpg" alt="Giải Trí" />
+                <h4>Giải Trí</h4>
+                <p>Chân dung người phụ nữ gốc Việt đầu tiên bay vào vũ trụ</p>
+              </div>
+              <div class="banner-item">
+                <img src="/img/duocphi.jpg" alt="Giải Trí " />
+                <h4>Giải Trí</h4>
+                <p>Lưu Diệc Phi thành tâm điểm chỉ trích</p>
+              </div>
+            </div>
+
+            <!-- 6 Banner -->
+            <div class="banner-item">
+              <p class="banner-title">
+                Sáp nhập Cần Thơ, Hậu Giang, Sóc Trăng dự kiến dư 255 trụ sở làm
+                việc
+              </p>
+              <div class="banner-content">
+                <img
+                  src="img/banner-bao-tien-phong-1276x90px-2003-2285.jpg"
+                  alt="Banner 1"
+                />
+
+                <!-- Gói chữ vào 1 khối riêng -->
+                <div class="banner-text">
+                  <h2>Xã hội</h2>
+                  <h3>
+                    TPO - Theo dự tính của TP. Cần Thơ, Hậu Giang và Sóc Trăng,
+                    sau sáp nhập, đơn vị hành chính mới sẽ dư khoảng 255 trụ sở
+                    làm việc. Việc xử lý, sắp xếp lại số tài sản công này sẽ
+                    được tính toán để phù hợp với mô hình đơn vị hành chính mới,
+                    xử lý theo quy định. Đơn vị cấp cơ sở sau sáp nhập sẽ tinh
+                    gọn còn khoảng 99 xã, phường.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <p class="banner-title">
+                Bộ trưởng Quốc phòng Việt Nam và Trung Quốc chủ trì giao lưu hữu
+                nghị tại Lạng Sơn
+              </p>
+              <div class="banner-content">
+                <img src="img/congan.jpg" alt="Banner 1" />
+                <!-- Gói chữ vào 1 khối riêng -->
+                <div class="banner-text">
+                  <h2>Người lính</h2>
+                  <h3>
+                    TPO - Sáng 17/4, Thượng tướng Đổng Quân - Bộ trưởng Bộ Quốc
+                    phòng Trung Quốc, dẫn đầu đoàn đại biểu quân đội nước bạn
+                    nhập cảnh qua cửa khẩu quốc tế Hữu Nghị tham gia thực hiện
+                    nhiều nội dung chương trình Giao lưu Hữu nghị Quốc phòng
+                    Việt Nam - Trung Quốc lần thứ 9 tại tỉnh Lạng Sơn.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <p class="banner-title">
+                Cần Thơ lập đề án tư vấn việc làm cho cán bộ, công chức, viên
+                chức sau sắp xếp
+              </p>
+              <div class="banner-content">
+                <img src="img/cantho.jpeg" alt="Banner 1" />
+
+                
+                <div class="banner-text">
+                  <h2>Xã hội</h2>
+                  <h3>
+                    TPO - Cử tri Cần Thơ đặc biệt quan tâm tới chế độ, chính
+                    sách cho cán bộ, công chức, viên chức sau khi thực hiện sắp
+                    xếp bộ máy, sau khi sáp nhập cấp xã có tổ chức, sáp nhập lại
+                    các ấp, tổ dân phố, khu vực.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column column-2">
+            <!-- Cột 2: 5 Banner -->
+            <div class="banner-item">
+              <h2>TÔI NGHĨ</h2>
+              <img src="/img/toinghi.jpg" alt="Banner 12" />
+            </div>
+
+            <!-- Thông tin Xã hội -->
+            <div class="section-info">
+              <h2 class="section-title">Xã hội</h2>
+              <img src="/img/xahoi.jpg" alt="Banner 12" />
+              <div class="related-info">
+                <h1>
+                  Tổng Bí thư Tô Lâm gặp mặt cán bộ lão thành cách mạng, người
+                  có công, gia đình chính sách
+                </h1>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Chủ tịch nước tặng Trường Sĩ quan Lục quân 1 Huân chương
+                      Bảo vệ Tổ quốc</a
+                    >
+                  </li>
+                  <li><a href="#">Ban Bí thư chỉ định nhân sự tại TPHCM</a></li>
+                  <li>
+                    <a href="#"
+                      >Hàng trăm gốc 'cây tỷ đô' gãy đổ do mưa đá, lốc xoáy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Màn duyệt đội ngũ và biểu diễn nghệ thuật hùng tráng
+                      trong nắng gió Sơn Tây
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Bỏ mô hình thành phố thuộc tỉnh, thành phố thuộc thành
+                      phố trực thuộc trung ương, hình thành 11 đặc khu</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Yêu cầu đảm bảo chính sách với người có công dịp 50 năm
+                      giải phóng miền Nam</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Kinh Tế -->
+            <div class="section-info">
+              <h2 class="section-title">Kinh tế</h2>
+              <img src="/img/vang.jpg" alt="Banner 12" />
+              <div class="related-info">
+                <h1>Lý do giá vàng thế giới ‘bay’ mức kỷ lục</h1>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Hình thành loạt 'siêu thủ phủ công nghiệp' sau sáp nhập
+                      tỉnh thành</a
+                    >
+                  </li>
+                  <li><a href="#">Giá vàng tăng mạnh như vũ bão</a></li>
+                  <li>
+                    <a href="#"
+                      >'Tối hậu thư' liên quan bất cập đèn tín hiệu, biển báo
+                      đường bộ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Đề xuất làm cao tốc 25.000 tỷ nối Mộc Châu với TP. Sơn
+                      La</a
+                    >
+                  </li>
+                  <li><a href="#">Khi hàng hóa phải có 'căn cước số'</a></li>
+                  <li>
+                    <a href="#"
+                      >Trợ cấp với người trên 70 tuổi không có lương hưu từ ngày
+                      1/7</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Pháp luật -->
+            <div class="section-info">
+              <h2 class="section-title">Pháp luật</h2>
+              <img src="/img/phapluat.jpeg" alt="Banner 12" />
+              <div class="related-info">
+                <h1>
+                  Đường dây sản xuất tân dược giả 'khủng' tồn tại nhiều năm
+                  trách nhiệm thuộc về ai?
+                </h1>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >CSGT phát hiện tài xế xe khách uống bia trước khi rời
+                      bến, lái xe tải 'đập đá' rồi cầm vô lăng</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Hà Nội: Bắt ổ nhóm ‘tín dụng đen’ cho vay lãi hơn
+                      5.400%/năm, thu nhiều súng đạn</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Bắt nhóm thu tiền 'bảo kê' bốc xếp ở chợ Bình Tây</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >[CLIP] Xe tải to chèn xe tải nhỏ, người trên cabin cầm
+                      rựa nhảy xuống đe dọa</a
+                    >
+                  </li>
+                  <li><a href="#">Khởi tố đối tượng lừa đảo ‘luyện thi’</a></li>
+                  <li>
+                    <a href="#"
+                      >Cụ bà 74 tuổi bị hành hung, cướp vàng khi ở nhà một
+                      mình</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Thế giới -->
+            <div class="section-info">
+              <h2 class="section-title">Thế giới</h2>
+              <img src="/img/thegioi.jpg" alt="Banner 12" />
+              <div class="related-info">
+                <h1>
+                  Tổng thống Mỹ Trump chặn Israel tấn công địa điểm hạt nhân của
+                  Iran?
+                </h1>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >THẾ GIỚI 24H: Bang California kiện Tổng thống Mỹ Trump ra
+                      tòa nhằm ngăn chặn thuế quan</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Tổng thống Mỹ Trump khoe đạt được ‘tiến triển lớn’ trong
+                      đàm phán thuế quan với Nhật Bản</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">Mỹ áp mức thuế 245% với hàng hoá Trung Quốc</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Sáu tàu ngầm hạt nhân của Trung Quốc đồng loạt xuất hiện
+                      tại một căn cứ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Thuế quan của Tổng thống Mỹ Trump có thể ảnh hưởng đến
+                      thương vụ bán 20 tiêm kích F-16</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Mỹ hạ mức bồi hoàn tiền viện trợ từ 300 tỷ USD xuống 100
+                      tỷ USD cho Ukraine</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="column column-3">
+            <!-- Cột 3: 1 Banner -->
+            <h1>Nhật báo</h1>
+            <div class="banner-item">
+              <img src="/img/nhatbao.png" alt="Banner 13" />
+            </div>
+
+            <!-- 2 Banner dưới dòng chữ -->
+            <div class="banner-item">
+              <img src="/img/hanhtrinh.jpg" alt="Banner 13" />
+              <h1>Kỳ VII: Quỷ Cốc Tử mưu lược toàn thư - Ngỗ hợp</h1>
+            </div>
+            <div class="banner-grid">
+              <div class="banner-item">
+                <div class="image-row">
+                  <img src="/img/hanhtrinh.jpg" alt="Banner 14" />
+                  <p>
+                    KỲ 109: Cà phê và võ học trong tiến trình rèn luyện thân –
+                    tâm - trí
+                  </p>
+                </div>
+              </div>
+              <div class="banner-item">
+                <div class="image-row">
+                  <img src="/img/anh2.png" alt="Banner 15" />
+                  <p>
+                    Buôn Ma Thuột và tầm nhìn 20 tỷ USD cho ngành cà phê Việt
+                    Nam
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 3 Banner dưới -->
+            <div class="banner-item">
+              <img src="/img/xang.jpg" alt="Banner 16" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section-topic-columns">
+          <!-- Cột 1: Giới trẻ -->
+          <div class="topic-column">
+            <div class="topic-header">Giới trẻ</div>
+            <div class="topic-banner">
+              <img src="/img/gioitre.jpg" alt="Giới trẻ" />
+              <div class="topic-banner-text">
+                Nam sinh Hòa Bình lập kỷ lục hiếm gặp ở Đường lên đỉnh Olympia
+              </div>
+            </div>
+            <ul class="topic-list">
+              <li><a href="#">Xu hướng sống mới của giới trẻ</a></li>
+              <li><a href="#">Chuyện học hành và khởi nghiệp</a></li>
+              <li><a href="#">TikTok và đời sống giới trẻ</a></li>
+              <li><a href="#">Câu lạc bộ sinh viên nổi bật</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 2: Giáo dục -->
+          <div class="topic-column">
+            <div class="topic-header">Giáo dục</div>
+            <div class="topic-banner">
+              <img src="/img/giaoduc.jpg" alt="Giáo dục" />
+              <div class="topic-banner-text">
+                8.700 dự án khởi nghiệp đến từ học sinh phổ thông
+              </div>
+            </div>
+            <ul class="topic-list">
+              <li><a href="#">Học sinh xuất sắc toàn quốc</a></li>
+              <li><a href="#">Các phương pháp học hiệu quả</a></li>
+              <li><a href="#">Học online hậu đại dịch</a></li>
+              <li><a href="#">Đổi mới chương trình phổ thông</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Sức khỏe -->
+          <div class="topic-column">
+            <div class="topic-header">Sức khỏe</div>
+            <div class="topic-banner">
+              <img src="/img/suckhoe.jpg" alt="Sức khỏe" />
+              <div class="topic-banner-text">
+                Bác sĩ chuyên khoa ung bướu nói về thông tin đậu nành 'đại kỵ'
+                với người bệnh ung thư
+              </div>
+            </div>
+            <ul class="topic-list">
+              <li><a href="#">Thói quen tốt cho tinh thần</a></li>
+              <li><a href="#">Dinh dưỡng học đường</a></li>
+              <li><a href="#">Giấc ngủ khoa học</a></li>
+              <li><a href="#">Tập thể dục đúng cách</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="video-section">
+          <div class="video-box">
+            <!-- Nav -->
+            <nav class="video-nav">
+              <ul>
+                <li><a href="#">VIDEO</a></li>
+                <li><a href="#">THỜI SỰ</a></li>
+                <li><a href="#">SHOWBIZ-TV</a></li>
+                <li><a href="#">THỜI TIẾT</a></li>
+                <li><a href="#">THỊ TRƯỜNG</a></li>
+                <li><a href="#">THỂ THAO</a></li>
+                <li><a href="#">QUÂN SỰ</a></li>
+                <li><a href="#">MUTEX</a></li>
+              </ul>
+            </nav>
+
+            <!-- Nội dung video -->
+            <div class="video-content">
+              <!-- Cột 1  -->
+              <div class="video-column video-main">
+                <div class="video">
+                  <video controls>
+                    <source src="/path/to/video.mp4" type="video/mp4" />
+                  </video>
+                  <p class="video-title">Bóng đá Việt Nam</p>
+                </div>
+              </div>
+
+              <!-- Cột 2  -->
+              <div class="video-column video-sidebar">
+                <div class="video-item">
+                  <div class="video-thumbnail">
+                    <video controls>
+                      <source src="/path/to/video2.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <p class="video-title">Tên Video 1</p>
+                </div>
+                <div class="video-item">
+                  <div class="video-thumbnail">
+                    <video controls>
+                      <source src="/path/to/video3.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <p class="video-title">Tên Video 2</p>
+                </div>
+                <div class="video-item">
+                  <div class="video-thumbnail">
+                    <video controls>
+                      <source src="/path/to/video4.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <p class="video-title">Tên Video 3</p>
+                </div>
+                <div class="video-item">
+                  <div class="video-thumbnail">
+                    <video controls>
+                      <source src="/path/to/video5.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <p class="video-title">Tên Video 4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-topic-columns">
+          <!-- Cột 1: Văn hóa -->
+          <div class="topic-column">
+            <div class="topic-header">VĂN HÓA</div>
+            <div class="topic-banner">
+              <img src="/img/vanhoa.jpg" alt="Văn hóa" />
+              <div class="topic-banner-text">
+                Thủ tướng Phạm Minh Chính dự chương trình nghệ thuật 'Ký ức để
+                lại'
+              </div>
+            </div>
+            <div class="sub-banners">
+              <div class="sub-banner-item">
+                <img src="/img/vh1.jpg" alt="Văn hóa 1" />
+                <p class="sub-banner-text">Lễ hội truyền thống</p>
+              </div>
+              <div class="sub-banner-item">
+                <img src="/img/vh2.jpg" alt="Văn hóa 2" />
+                <p class="sub-banner-text">Nghệ thuật dân gian</p>
+              </div>
+              <div class="sub-banner-item">
+                <img src="/img/vh3.jpg" alt="Văn hóa 3" />
+                <p class="sub-banner-text">Văn học đương đại</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 2: Thể thao -->
+          <div class="topic-column">
+            <div class="topic-header">THỂ THAO</div>
+            <div class="topic-banner">
+              <img src="/img/thethao.jpeg" alt="Thể thao" />
+              <div class="topic-banner-text">
+                Nhận định SLNA vs Quảng Nam, 18h00 ngày 20/4: Hai kẻ cùng cảnh
+                ngộ
+              </div>
+            </div>
+            <div class="sub-banners">
+              <div class="sub-banner-item">
+                <img src="/img/tt1.jpg" alt="Thể thao 1" />
+                <p class="sub-banner-text">Bóng đá Việt Nam</p>
+              </div>
+              <div class="sub-banner-item">
+                <img src="/img/tt2.jpg" alt="Thể thao 2" />
+                <p class="sub-banner-text">Olympic Paris 2024</p>
+              </div>
+              <div class="sub-banner-item">
+                <img src="/img/tt3.jpg" alt="Thể thao 3" />
+                <p class="sub-banner-text">Những huyền thoại</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 3: Người lính -->
+          <div class="topic-column">
+            <div class="topic-header">NGƯỜI LÍNH</div>
+            <div class="topic-banner">
+              <img src="/img/nguoilinh.gif" alt="Người lính" />
+              <div class="topic-banner-text">
+                Nga tung video phá hủy 'hỏa thần' HIMARS của Ukraine
+              </div>
+            </div>
+            <div class="sub-banners">
+              <div class="sub-banner-item">
+                <img src="/img/nl1.jpg" alt="Người lính 1" />
+                <p class="sub-banner-text">Chuyện từ biên giới</p>
+              </div>
+              <div class="sub-banner-item">
+                <img src="/img/nl2.jpg" alt="Người lính 2" />
+                <p class="sub-banner-text">Gương mặt quân nhân</p>
+              </div>
+              <div class="sub-banner-item">
+                <img src="/img/nl3.jpg" alt="Người lính 3" />
+                <p class="sub-banner-text">Huấn luyện đặc biệt</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="songxanh-section">
+          <div class="songxanh-box">
+            <div class="songxanh-header">
+              <h2>SÓNG XANH</h2>
+            </div>
+            <div class="songxanh-divider"></div>
+
+            <div class="songxanh-content">
+              <!-- Cột 1 -->
+              <div class="songxanh-main-video">
+                <div class="video-container">
+                  <video controls>
+                    <source src="/path/to/main-video.mp4" type="video/mp4" />
+                    Trình duyệt không hỗ trợ video.
+                  </video>
+                  <div class="video-title-overlay">
+                    Tổ chức giải chạy robot với người lần đầu tiên trên thế giới
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cột 2 -->
+              <div class="songxanh-side-videos">
+                <div class="side-video-item">
+                  <div class="side-video">
+                    <video controls>
+                      <source src="/path/to/video1.mp4" type="video/mp4" />
+                    </video>
+                    <p class="side-video-title">Bản Tin Sáng</p>
+                  </div>
+                  <div class="side-video">
+                    <video controls>
+                      <source src="/path/to/video2.mp4" type="video/mp4" />
+                    </video>
+                    <p class="side-video-title">Thời Tiết Hôm Nay</p>
+                  </div>
+                </div>
+                <div class="side-video-item">
+                  <div class="side-video">
+                    <video controls>
+                      <source src="/path/to/video3.mp4" type="video/mp4" />
+                    </video>
+                    <p class="side-video-title">Thể Thao 24h</p>
+                  </div>
+                  <div class="side-video">
+                    <video controls>
+                      <source src="/path/to/video4.mp4" type="video/mp4" />
+                    </video>
+                    <p class="side-video-title">Showbiz Nóng</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-divider"></div>
+        <br />
+
+        <section class="section-hang-khong-du-lich">
+          <div class="header">
+            <h2>Hàng không - Du lịch</h2>
+          </div>
+
+          <div class="content">
+            <!-- Cột 1 -->
+            <div class="column col-1">
+              <div class="main-banner">
+                <img src="/img/hangkhong.webp" alt="Banner chính" />
+              </div>
+              <p class="banner-title under-title">Tên Banner Chính</p>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="column col-2">
+              <div class="small-banner">
+                <img src="/img/hk1.webp" alt="Banner nhỏ 1" />
+                <p class="banner-title under-title">
+                  Máy bay gặp sự cố hạ cánh, khách hoảng loạn tưởng 'kết thúc
+                  cuộc đời'
+                </p>
+              </div>
+              <div class="small-banner">
+                <img src="/img/hk6.jpg" alt="Banner nhỏ 2" />
+                <p class="banner-title under-title">
+                  Máy bay gặp sự cố hạ cánh, khách hoảng loạn tưởng 'kết thúc
+                  cuộc đời'
+                </p>
+              </div>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="column col-3">
+              <div class="tiny-banner">
+                <img src="/img/hk2.jpeg" alt="Banner nhỏ 1" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hk3.jpg" alt="Banner nhỏ 2" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hk4.jpg" alt="Banner nhỏ 3" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hk5.jpg" alt="Banner nhỏ 4" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-divider"></div>
+        <br />
+
+        <section class="section-hang-khong-du-lich">
+          <div class="header">
+            <h2>Hoa hậu</h2>
+          </div>
+
+          <div class="content">
+            <!-- Cột 1 -->
+            <div class="column col-1">
+              <div class="main-banner">
+                <img src="/img/hoahau.jpeg" alt="Banner chính" />
+              </div>
+              <p class="banner-title under-title">Tên Banner Chính</p>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="column col-2">
+              <div class="small-banner">
+                <img src="/img/hh1.jpeg" alt="Banner nhỏ 1" />
+                <p class="banner-title under-title">
+                  Máy bay gặp sự cố hạ cánh, khách hoảng loạn tưởng 'kết thúc
+                  cuộc đời'
+                </p>
+              </div>
+              <div class="small-banner">
+                <img src="/img/hh2.gif" alt="Banner nhỏ 2" />
+                <p class="banner-title under-title">
+                  Máy bay gặp sự cố hạ cánh, khách hoảng loạn tưởng 'kết thúc
+                  cuộc đời'
+                </p>
+              </div>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="column col-3">
+              <div class="tiny-banner">
+                <img src="/img/hh3.gif" alt="Banner nhỏ 1" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hh4.png" alt="Banner nhỏ 2" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hh5.jpg" alt="Banner nhỏ 3" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hh1.jpeg" alt="Banner nhỏ 4" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-divider"></div>
+        <br />
+
+        <section class="section-hang-khong-du-lich">
+          <div class="header">
+            <h2>Địa Ốc</h2>
+          </div>
+
+          <div class="content">
+            <!-- Cột 1 -->
+            <div class="column col-1">
+              <div class="main-banner">
+                <img src="/img/hangkhong.webp" alt="Banner chính" />
+              </div>
+              <p class="banner-title under-title">Tên Banner Chính</p>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="column col-2">
+              <div class="small-banner">
+                <img src="/img/hk1.webp" alt="Banner nhỏ 1" />
+                <p class="banner-title under-title">
+                  Máy bay gặp sự cố hạ cánh, khách hoảng loạn tưởng 'kết thúc
+                  cuộc đời'
+                </p>
+              </div>
+              <div class="small-banner">
+                <img src="/img/hk6.jpg" alt="Banner nhỏ 2" />
+                <p class="banner-title under-title">
+                  Máy bay gặp sự cố hạ cánh, khách hoảng loạn tưởng 'kết thúc
+                  cuộc đời'
+                </p>
+              </div>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="column col-3">
+              <div class="tiny-banner">
+                <img src="/img/hk2.jpeg" alt="Banner nhỏ 1" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hk3.jpg" alt="Banner nhỏ 2" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hk4.jpg" alt="Banner nhỏ 3" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+              <div class="tiny-banner">
+                <img src="/img/hk5.jpg" alt="Banner nhỏ 4" />
+                <p class="right-title">
+                  Biển người đổ về Cửa Lò thưởng thức 'đại tiệc' pháo hoa
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-divider"></div>
+        <br />
+
+        <section class="section-topic-columns-small">
+          <!-- Cột 1-->
+          <div class="topic-column-small">
+            <div class="topic-header-small">NHỊP SỐNG THỦ ĐÔ</div>
+            <div class="topic-banner-small">
+              <img src="/img/nhịp sống.jpg" alt="Nhịp sống Thủ đô" />
+              <div class="topic-banner-text-small">
+                Hà Nội rực rỡ trong mùa phượng nở tháng Tư
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/bandoc.jpg" alt="Nhịp sống 1" />
+                <p class="sub-banner-text-small">
+                  Xe buýt hai tầng hút khách du lịch
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/anh.jpg" alt="Nhịp sống 2" />
+                <p class="sub-banner-text-small">
+                  Người dân đạp xe quanh hồ Gươm mỗi sáng
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 2 -->
+          <div class="topic-column-small">
+            <div class="topic-header-small">BẠN ĐỌC</div>
+            <div class="topic-banner-small">
+              <img src="/img/bandoc.jpg" alt="Bạn đọc" />
+              <div class="topic-banner-text-small">
+                Bạn đọc gửi tâm thư về tình hình giáo dục
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/hh2.gif" alt="Bạn đọc 1" />
+                <p class="sub-banner-text-small">
+                  Thư bạn đọc: Cần giải quyết triệt để ngập lụt
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/duocphi.jpg" alt="Bạn đọc 2" />
+                <p class="sub-banner-text-small">
+                  Góp ý xây dựng thành phố xanh - sạch - đẹp
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 3-->
+          <div class="topic-column-small">
+            <div class="topic-header-small">ẢNH</div>
+            <div class="topic-banner-small">
+              <img src="/img/anh.jpg" alt="Ảnh" />
+              <div class="topic-banner-text-small">
+                Những khoảnh khắc xúc động qua ống kính
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/diaoc.jpg" alt="Ảnh 1" />
+                <p class="sub-banner-text-small">
+                  Hình ảnh lễ khai giảng trên khắp cả nước
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/hk5.jpg" alt="Ảnh 2" />
+                <p class="sub-banner-text-small">
+                  Bức ảnh đoạt giải quốc tế về thiên nhiên Việt
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-divider"></div>
+        <br />
+
+        <section class="section-topic-columns-small">
+          <!-- Cột 1 -->
+          <div class="topic-column-small">
+            <div class="topic-header-small">NHỊP SỐNG THỦ ĐÔ</div>
+            <div class="topic-banner-small">
+              <img src="/img/nhịp sống.jpg" alt="Nhịp sống Thủ đô" />
+              <div class="topic-banner-text-small">
+                Hà Nội rực rỡ trong mùa phượng nở tháng Tư
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/bandoc.jpg" alt="Nhịp sống 1" />
+                <p class="sub-banner-text-small">
+                  Xe buýt hai tầng hút khách du lịch
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/anh.jpg" alt="Nhịp sống 2" />
+                <p class="sub-banner-text-small">
+                  Người dân đạp xe quanh hồ Gươm mỗi sáng
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 2 -->
+          <div class="topic-column-small">
+            <div class="topic-header-small">BẠN ĐỌC</div>
+            <div class="topic-banner-small">
+              <img src="/img/bandoc.jpg" alt="Bạn đọc" />
+              <div class="topic-banner-text-small">
+                Bạn đọc gửi tâm thư về tình hình giáo dục
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/hh2.gif" alt="Bạn đọc 1" />
+                <p class="sub-banner-text-small">
+                  Thư bạn đọc: Cần giải quyết triệt để ngập lụt
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/duocphi.jpg" alt="Bạn đọc 2" />
+                <p class="sub-banner-text-small">
+                  Góp ý xây dựng thành phố xanh - sạch - đẹp
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 3-->
+          <div class="topic-column-small">
+            <div class="topic-header-small">ẢNH</div>
+            <div class="topic-banner-small">
+              <img src="/img/anh.jpg" alt="Ảnh" />
+              <div class="topic-banner-text-small">
+                Những khoảnh khắc xúc động qua ống kính
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/diaoc.jpg" alt="Ảnh 1" />
+                <p class="sub-banner-text-small">
+                  Hình ảnh lễ khai giảng trên khắp cả nước
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/hk5.jpg" alt="Ảnh 2" />
+                <p class="sub-banner-text-small">
+                  Bức ảnh đoạt giải quốc tế về thiên nhiên Việt
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-divider"></div>
+        <br />
+
+        <section class="section-topic-columns-small">
+          <!-- Cột 1-->
+          <div class="topic-column-small">
+            <div class="topic-header-small">NHỊP SỐNG THỦ ĐÔ</div>
+            <div class="topic-banner-small">
+              <img src="/img/nhịp sống.jpg" alt="Nhịp sống Thủ đô" />
+              <div class="topic-banner-text-small">
+                Hà Nội rực rỡ trong mùa phượng nở tháng Tư
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/bandoc.jpg" alt="Nhịp sống 1" />
+                <p class="sub-banner-text-small">
+                  Xe buýt hai tầng hút khách du lịch
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/anh.jpg" alt="Nhịp sống 2" />
+                <p class="sub-banner-text-small">
+                  Người dân đạp xe quanh hồ Gươm mỗi sáng
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 2 -->
+          <div class="topic-column-small">
+            <div class="topic-header-small">BẠN ĐỌC</div>
+            <div class="topic-banner-small">
+              <img src="/img/bandoc.jpg" alt="Bạn đọc" />
+              <div class="topic-banner-text-small">
+                Bạn đọc gửi tâm thư về tình hình giáo dục
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/hh2.gif" alt="Bạn đọc 1" />
+                <p class="sub-banner-text-small">
+                  Thư bạn đọc: Cần giải quyết triệt để ngập lụt
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/duocphi.jpg" alt="Bạn đọc 2" />
+                <p class="sub-banner-text-small">
+                  Góp ý xây dựng thành phố xanh - sạch - đẹp
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 3 -->
+          <div class="topic-column-small">
+            <div class="topic-header-small">ẢNH</div>
+            <div class="topic-banner-small">
+              <img src="/img/anh.jpg" alt="Ảnh" />
+              <div class="topic-banner-text-small">
+                Những khoảnh khắc xúc động qua ống kính
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/diaoc.jpg" alt="Ảnh 1" />
+                <p class="sub-banner-text-small">
+                  Hình ảnh lễ khai giảng trên khắp cả nước
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/hk5.jpg" alt="Ảnh 2" />
+                <p class="sub-banner-text-small">
+                  Bức ảnh đoạt giải quốc tế về thiên nhiên Việt
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-divider"></div>
+        <br />
+
+        <section class="section-topic-columns-small">
+          <!-- Cột 1-->
+          <div class="topic-column-small">
+            <div class="topic-header-small">NHỊP SỐNG THỦ ĐÔ</div>
+            <div class="topic-banner-small">
+              <img src="/img/nhịp sống.jpg" alt="Nhịp sống Thủ đô" />
+              <div class="topic-banner-text-small">
+                Hà Nội rực rỡ trong mùa phượng nở tháng Tư
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/bandoc.jpg" alt="Nhịp sống 1" />
+                <p class="sub-banner-text-small">
+                  Xe buýt hai tầng hút khách du lịch
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/anh.jpg" alt="Nhịp sống 2" />
+                <p class="sub-banner-text-small">
+                  Người dân đạp xe quanh hồ Gươm mỗi sáng
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 2 -->
+          <div class="topic-column-small">
+            <div class="topic-header-small">BẠN ĐỌC</div>
+            <div class="topic-banner-small">
+              <img src="/img/bandoc.jpg" alt="Bạn đọc" />
+              <div class="topic-banner-text-small">
+                Bạn đọc gửi tâm thư về tình hình giáo dục
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/hh2.gif" alt="Bạn đọc 1" />
+                <p class="sub-banner-text-small">
+                  Thư bạn đọc: Cần giải quyết triệt để ngập lụt
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/duocphi.jpg" alt="Bạn đọc 2" />
+                <p class="sub-banner-text-small">
+                  Góp ý xây dựng thành phố xanh - sạch - đẹp
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 3-->
+          <div class="topic-column-small">
+            <div class="topic-header-small">ẢNH</div>
+            <div class="topic-banner-small">
+              <img src="/img/anh.jpg" alt="Ảnh" />
+              <div class="topic-banner-text-small">
+                Những khoảnh khắc xúc động qua ống kính
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/diaoc.jpg" alt="Ảnh 1" />
+                <p class="sub-banner-text-small">
+                  Hình ảnh lễ khai giảng trên khắp cả nước
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/hk5.jpg" alt="Ảnh 2" />
+                <p class="sub-banner-text-small">
+                  Bức ảnh đoạt giải quốc tế về thiên nhiên Việt
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-divider"></div>
+        <br />
+
+        <section class="section-topic-columns-small">
+          <!-- Cột 1-->
+          <div class="topic-column-small">
+            <div class="topic-header-small">NHỊP SỐNG THỦ ĐÔ</div>
+            <div class="topic-banner-small">
+              <img src="/img/nhịp sống.jpg" alt="Nhịp sống Thủ đô" />
+              <div class="topic-banner-text-small">
+                Hà Nội rực rỡ trong mùa phượng nở tháng Tư
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/bandoc.jpg" alt="Nhịp sống 1" />
+                <p class="sub-banner-text-small">
+                  Xe buýt hai tầng hút khách du lịch
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/anh.jpg" alt="Nhịp sống 2" />
+                <p class="sub-banner-text-small">
+                  Người dân đạp xe quanh hồ Gươm mỗi sáng
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 2 -->
+          <div class="topic-column-small">
+            <div class="topic-header-small">BẠN ĐỌC</div>
+            <div class="topic-banner-small">
+              <img src="/img/bandoc.jpg" alt="Bạn đọc" />
+              <div class="topic-banner-text-small">
+                Bạn đọc gửi tâm thư về tình hình giáo dục
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/hh2.gif" alt="Bạn đọc 1" />
+                <p class="sub-banner-text-small">
+                  Thư bạn đọc: Cần giải quyết triệt để ngập lụt
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/duocphi.jpg" alt="Bạn đọc 2" />
+                <p class="sub-banner-text-small">
+                  Góp ý xây dựng thành phố xanh - sạch - đẹp
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột 3 -->
+          <div class="topic-column-small">
+            <div class="topic-header-small">ẢNH</div>
+            <div class="topic-banner-small">
+              <img src="/img/anh.jpg" alt="Ảnh" />
+              <div class="topic-banner-text-small">
+                Những khoảnh khắc xúc động qua ống kính
+              </div>
+            </div>
+            <div class="sub-banners-small">
+              <div class="sub-banner-item-small">
+                <img src="/img/diaoc.jpg" alt="Ảnh 1" />
+                <p class="sub-banner-text-small">
+                  Hình ảnh lễ khai giảng trên khắp cả nước
+                </p>
+              </div>
+              <div class="separator-small"></div>
+              <div class="sub-banner-item-small">
+                <img src="/img/hk5.jpg" alt="Ảnh 2" />
+                <p class="sub-banner-text-small">
+                  Bức ảnh đoạt giải quốc tế về thiên nhiên Việt
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="tienphong-footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="/img/tải_xuống-removebg-preview.png" alt="Tiền Phong" />
+          </div>
+          <div class="footer-info">
+            <p><strong>Toà soạn:</strong> 15 Hồ Xuân Hương, Hà Nội</p>
+            <p><strong>Điện thoại:</strong> 024 3943 4340</p>
+            <p><strong>Email:</strong> toasoan@tienphong.vn</p>
+          </div>
+          <div class="footer-links">
+            <a href="#">Giới thiệu</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Quảng cáo</a>
+            <a href="#">Chính sách bảo mật</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Báo Tiền Phong. Bản quyền thuộc về Báo Tiền Phong.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
 <script>
-    const now = new Date();
-    const formattedDate = now.toLocaleDateString("vi-VN", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    });
-    document.getElementById("current-date").textContent = formattedDate;
-  </script>
-  
+  const now = new Date();
+  const formattedDate = now.toLocaleDateString("vi-VN", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  document.getElementById("current-date").textContent = formattedDate;
+</script>

@@ -29,8 +29,4 @@ Dự án này là một trang web mô phỏng giao diện của báo **Tiền Ph
 - **CSS3**: Tạo kiểu giao diện người dùng
 - **JavaScript**: Hiển thị ngày tự động
 
-## 📌 Hướng Dẫn Sử Dụng
 
-1. Clone hoặc tải xuống dự án:
-   ```bash
-   git clone https://github.com/ten-ban/readme-tienphong.git
