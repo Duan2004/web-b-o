@@ -65,7 +65,7 @@ header h1 {
   padding: 20px 0;
 }
 
-.entertainment-banner-item {
+.entertainment-  {
   background: #fdfdfd;
   border-radius: 10px;
   overflow: hidden;
@@ -73,7 +73,7 @@ header h1 {
 }
 
 .entertainment-banner-item img {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: block;
 }
@@ -100,7 +100,9 @@ section img {
   width: 100%;
   max-width: 600px;
   height: auto;
-  margin: 10px 0;
+  margin: 20px 0;
+  object-fit: cover;
+  display: block; 
 }
 
 section h2 {
@@ -257,6 +259,13 @@ footer {
 .highlight-img h2 {
   font-size: 16px;
   color: #555;
+  line-height: 1.4; 
+  display: -webkit-box; 
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  margin: 10px 0; 
 }
 
 .highlight-titles {
@@ -330,9 +339,9 @@ footer {
   width: 23%;
   background-color: #f9f9f9;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   padding: 10px;
-  box-sizing: border-box;
+  overflow: hidden; 
 }
 
 .highlight-img img {
@@ -347,6 +356,13 @@ h1 {
   color: #333;
   text-align: left;
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%; 
+  display: -webkit-box; 
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical; 
+  overflow: hidden;  text-align: left;
 }
 
 .banner-1 img {
@@ -425,7 +441,7 @@ h1 {
 .content-column {
   background-color: #f9f9f9;
   padding: 20px;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .banner-column {
@@ -497,6 +513,8 @@ a {
 .video-item h2 {
   color: #ffffff;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 h2 {
@@ -1275,7 +1293,9 @@ h2 {
   .topic-column {
     width: 100% !important;
   }
-
+.video-item h2{
+  white-space: nowrap;
+}
   .video-content {
     flex-direction: column;
   }
@@ -1397,3 +1417,4 @@ h2 {
     font-size: 16px;
   }
 }
+
